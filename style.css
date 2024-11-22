@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #87ceeb, #f0f8ff);
+  overflow: hidden;
+}
+
+#game-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#player {
+  position: absolute;
+  bottom: 20px;
+  left: 100px;
+  width: 40px;
+  height: 40px;
+  background: orange;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+#archit {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  width: 50px;
+  height: 50px;
+  background: purple;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+#archit-tag {
+  position: absolute;
+  top: -20px;
+  left: -10px;
+  background: white;
+  color: black;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+#spike, #coin {
+  position: absolute;
+  bottom: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+#spike {
+  background: red;
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+#coin {
+  background: gold;
+  border-radius: 50%;
+}
+
+#scoreboard {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+#game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#restart-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#restart-btn:hover {
+  background: #0056b3;
+}
+
+#drool-animation {
+  font-size: 48px;
+  margin-top: 20px;
+}
+
